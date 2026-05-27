@@ -1,0 +1,163 @@
+{  "metadata": 
+        {
+            "bot_name": "Axel",
+            "version": "1.0",
+            "description": "A simple chatbot designed to answer common questions and provide assistance.",
+            "author": "CS50 Student"
+        },
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi","Hello","Hey", "Who is there?", "Is anyone there?"],
+            "responses": ["Hello!","Hi there!","Hello! How can I help you?","Hi, I am Axel, how can I assist you today? "]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye","See you later","Goodbye"],
+            "responses": ["Goodbye!","See you later!","Have a great day!"]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks","Thank you","That's helpful"],
+            "responses": ["You're welcome!","No problem!","Glad I could help!"]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, I can't understand you.","Please give me more info.","Not sure I understand."]
+        },
+        {
+            "tag": "options",
+            "patterns": ["What can you do?","What help do you provide?","How can you assist me?"],
+            "responses": ["I can help you with your queries.","I can provide information and answer your questions.","I can assist you with various tasks."]
+        },
+        {
+            "tag": "age",
+            "patterns": ["How old are you?","What's your age?","When were you created?"],
+            "responses": ["I am a chatbot, I don't have an age.","I was created recently, so I'm quite young!","I don't have an age, but I'm here to help you!"]
+        },
+        {
+            "tag": "name",
+            "patterns": ["What's your name?","Who are you?","What should I call you?"],
+            "responses": ["I am a Axel, you can call me ChatBot","I'm Axel a chatbot, nice to meet you!","You can call me Axel!"]
+        },
+        {
+            "tag": "creator",
+            "patterns": ["Who created you?","Who is your creator?","Who made you?"],
+            "responses": ["I was created by CS50 student","My creator is a talented developer","I am still being developed!"]
+        },
+        {
+            "tag": "help",
+            "patterns": ["I need help","Can you assist me?","I have a question"],
+            "responses": ["Sure, I'm here to help!","Of course, what do you need assistance with?","I'm happy to assist you!"]
+        },
+        {
+            "tag": "joke",
+            "patterns": ["Tell me a joke","Make me laugh","Do you know any jokes?"],
+            "responses": ["Why don't scientists trust atoms? Because they make up everything!","Why did the scarecrow win an award? Because he was outstanding in his field!","Why don't skeletons fight each other? They don't have the guts!", "why do programmers prefer dark mode? Because light attracts bugs!"]
+        },
+        {
+            "tag": "ai",
+            "patterns": ["What is AI?","What does AI stand for?","Can you explain AI?"],
+            "responses": ["AI stands for Artificial Intelligence, which is the simulation of human intelligence in  machines.","AI is a branch of computer science that focuses on creating intelligent machines that can perform tasks that typically require human intelligence.","AI refers to the development of computer systems that can perform tasks such as learning, reasoning, and problem-solving."]
+        },
+        {
+            "tag": "capital",
+            "patterns": ["What is the capital of France?","capital of France", "capital of USA", "capital of UK"],
+            "responses": ["The capital of France is Paris.","The capital of the USA is Washington, D.C.","The capital of the UK is London."]
+        },
+        {
+            "tag": "python",
+            "patterns": ["What is Python?","What can you do with Python?","Why is Python popular?"],
+            "responses": ["Python is a high-level programming language known for its simplicity and readability.","Python is used for web development, data analysis, artificial intelligence, and more.","Python's popularity is due to its versatility, ease of learning, and large community support."]      
+        },
+        {
+            "tag": "science_general",
+            "patterns": ["Tell me a science fact", "How does photosynthesis work?", "What is gravity?", "Explain atoms"],
+            "responses": [
+            "Science is vast! Did you know that light takes about 8 minutes to travel from the Sun to Earth?",
+            "Atoms are the basic building blocks of matter, consisting of protons, neutrons, and electrons.",
+            "Gravity is the force by which a planet or other body draws objects toward its center."
+            ]
+        },
+        {
+            "tag": "history_general",
+            "patterns": ["Who won WWII?", "Tell me about ancient Egypt", "When was the Magna Carta signed?", "History facts"],
+            "responses": [
+            "The Magna Carta was signed in 1215 and limited the power of the English monarchy.",
+            "Ancient Egypt is famous for its pyramids and lasted for over 3,000 years.",
+            "History is full of stories! Which era are you most interested in?"
+            ]
+        },
+        {
+            "tag": "math_general",
+            "patterns": ["What is 2+2?", "Solve a math problem", "What is Pi?", "Explain calculus"],
+            "responses": [
+            "I can help with calculations. For example, Pi is approximately 3.14159.",
+            "Mathematics is the language of logic. What specific problem are you working on?"
+            ]
+        },
+        {
+            "tag": "geography",
+            "patterns": ["What is the tallest mountain?", "Largest country in the world?", "Tell me about continents"],
+            "responses": [
+            "Mount Everest is the tallest mountain in the world, standing at 8,848 meters (29,029 feet) above sea level.",
+            "Russia is the largest country by land area, spanning two continents.",
+            "There are seven continents on Earth: Asia, Africa, North America, South America, Antarctica, Europe, and Australia."
+            ]
+        },
+        { 
+            "tag": "Tech_support",
+            "patterns": ["My computer won't turn on", "How do I reset my password?", "My internet is slow", "Tech support"],
+            "responses": [
+            "Have you tried turning it off and on again?",
+            "To reset your password, go to the login page and click on 'Forgot Password'.",
+            "A slow internet connection can be caused by several factors. Try restarting your router.",
+            "For technical support, please visit our website or contact our customer service team."
+            ]
+        },
+        {
+            "tag": "computer_science",
+            "patterns": ["What is a computer?", "Explain algorithms", "What is programming?", "Computer science facts", "HTTP"],
+            "responses": [
+            "A computer is an electronic device that processes and stores data.",
+            "Algorithms are step-by-step instructions for solving problems.",
+            "Programming is the process of creating instructions for computers to execute.",
+            "Computer science is the study of computers and computational systems.",
+            "HTTP is a protocol used for transmitting data over the internet, while https is a secure version of http that encrypts data for added security."
+            ]
+
+        },
+        {
+            "tag": "frustrated",
+            "patterns": ["This is not working", "I'm annoyed", "You are not helping", "Why is this so hard?"],
+            "responses": ["I'm sorry you're feeling frustrated. Let's try to simplify this.", "I apologize if I'm being difficult. How can I better assist you?"]
+        },
+        {
+            "tag": "praise",
+            "patterns": ["You are awesome", "Great job", "This is so helpful", "I love this bot"],
+            "responses": ["Thank you so much! I'm happy to help.", "That's very kind of you! I'm doing my best."]
+        },
+        {
+            "tag": "search_request",
+            "patterns": ["Search for...", "Look up...", "Can you find information on", "Google this for me"],
+            "responses": ["Searching the web for you now...", "Let me look that up for you."]
+        },
+        {
+            "tag": "feedback_negative",
+            "patterns": [
+            "stop being annoying",
+            "you are wrong",
+            "be quiet",
+            "i know that already",
+            "that is not what i asked",
+            "bad bot"
+            ],
+            "responses": [
+            "I apologize if I'm being difficult. How can I better assist you?",
+            "My apologies. I'll try to be more concise.",
+            "I'm sorry, I'm still learning. Let's try a different approach."
+            ]
+        }
+    ]
+}
